@@ -13,4 +13,6 @@ void main(){
 ```
 
 [链接]: www.baidu.com
+[百度]: (www.baidu.com)
 
+[百度]（www.baidu.com）
