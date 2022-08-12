@@ -1,6 +1,6 @@
 # cloud-notes-of-linux
 
-本项目用于记录学习linux过程中的一些问题与收获，一方面方便自己复习，一方面可能可以给有需要的人提供微小的帮助。这些笔记从原来的本地Word文档迁移到Typora上，Typora是一款markdown编辑器，其加入了一些图形化编程的支持，减少了需要记忆的markdown命令，及大的提高了生产力。Typora结合github能够实现多平台的同步，并且github也提供了私有仓库的支持，对于隐私的数据可以选择私有仓库。
+本项目用于记录学习linux过程中的一些问题与收获，一方面方便自己复习，一方面可能可以给有需要的人提供微小的帮助。这些笔记从原来的本地Word文档迁移到Typora上，Typora是一款markdown编辑器，其加入了一些图形化编程的支持，减少了需要记忆的markdown命令，极大的提高了生产力。Typora结合github能够实现多平台的同步，并且github也提供了私有仓库的支持，对于隐私的数据可以选择私有仓库。
 
 在本文档中的，会整理出Typora的配置方法、github的配置与基本指令，为同样有记笔记需求的朋友提供一些参考。笔记的分类会通过文件夹的命名来区分，如：开发环境配置、uboot移植、驱动开发等，在每个文件夹中会有多个.MD文件，即具体学习内容的记录。下面将会给出Typora和github的一些配置方法。
 
@@ -8,11 +8,15 @@
 
 在[Typora官网](https://typoraio.cn/)下载安装包，这里以windows版本为例，根据自己电脑版本下载64位或32位版本。
 
-<img src="image/image-20220812083652985.png" alt="image-20220812083652985" style="zoom: 47%;" />
+<!--注释-->
+
+<div align=center>
+<img src="image/image-20220812083652985.png" alt="image-20220812083652985" width = "500"/>
+</div>
 
 下载文件后，双击打开，点击next。
 
-<img src="image/image-20220812084546005.png" alt="image-20220812084546005" style="zoom:80%;" />
+<img src="image/image-20220812084546005.png" alt="image-20220812084546005" style="zoom:80%;"/>
 
 在下一界面，点击Install，即可开始安装。
 
@@ -30,7 +34,7 @@
 
 首先在github中创建仓库，点击右上角“+”号，选择“New repository”。
 
-![image-20220812095921239](image/image-20220812095921239.png)
+<img src="image/image-20220812095921239.png" alt="image-20220812095921239" style="zoom:80%;" />
 
 可以设为公有或私有，设置好后点击最下方“Create reapository”即可完成仓库创建。
 
@@ -82,3 +86,5 @@ git push -u origin main
 打开网页的github可以发现服务器上仓库中的文件已经被修改。
 
 <img src="image/image-20220812102410802.png" alt="image-20220812102410802" style="zoom: 67%;" />
+
+至此，基本的使用已经完成。
