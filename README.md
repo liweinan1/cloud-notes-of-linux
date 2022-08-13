@@ -89,4 +89,4 @@ git push -u origin main
 
 <img src="image/image-20220812102410802.png" alt="image-20220812102410802" style="zoom: 67%;" />
 
-至此，基本的使用已经完成。
+至此，Typora结合github的介绍已经完成。
