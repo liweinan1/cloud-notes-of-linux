@@ -434,6 +434,6 @@ setenv bootcmd 'mmc dev 1;ext2load mmc 1:2 0x80800000 /boot/zImage; ext2load mmc
 setenv bootargs 'console=ttymxc0,115200 root=/dev/mmcblk1p2 rootwait rw'
 ```
 
-修改后正常进入系统！
+修改后能够正常进入系统！
 
 ![image-20220813143210670](image/image-20220813143210670.png)
