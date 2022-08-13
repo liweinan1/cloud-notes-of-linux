@@ -116,3 +116,27 @@ cat id_rsa.pub //获取密匙
 ```
 git clone <repo> <directory>
 ```
+
+### 查看文件修改
+
+可以使用diff命令来比较工作区和暂存区、本地库的不同。
+
+```
+//查看工作区与暂存区区别
+git diff 
+//暂存区与本地库
+git diff --cached
+//工作区与本地库
+git diff HEAD
+```
+
+## git的一些问题
+
+### 一些命令无法显示中文路径
+
+通过以下命令可以解决。
+
+```
+git config --global core.quotePath false
+```
+
