@@ -16,25 +16,6 @@
 
 ### 建立vscode工程
 
-修改makefile文件，由于在环境变量中已经加入了交叉编译器位置与目标平台类型，所以这里只需要指明CROSS_COMPILE即可。
-
-```
-KERNELDIR := /home/book/linux/IMX6ULL/linux/wds_linux #
-
-CURRENT_PATH := $(shell pwd)
-
-obj-m := leddevice.o
-
-build : kernel_modules
-
-kernel_modules:
-	$(MAKE) -C $(KERNELDIR) M=$(CURRENT_PATH) modules
-
-clean:
-	$(MAKE) -C $(KERNELDIR) M=$(CURRENT_PATH) clean
-
-```
-
 执行以下命令编译。
 
 ```

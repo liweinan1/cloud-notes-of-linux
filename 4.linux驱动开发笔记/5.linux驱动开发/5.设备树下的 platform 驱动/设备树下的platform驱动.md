@@ -42,6 +42,14 @@ pinctrl_gpioled: gpioled{
 5.实现probe和move函数，在probe中实现字符设备的注册
 ```
 
+## 安装driver模块
+
+从网络文件系统启动，安装模块测试。
+
+``` 0
+insmod leddriver.ko
+```
+
 ## 应用程序编写
 
 需要做的工作如下：
@@ -51,16 +59,21 @@ pinctrl_gpioled: gpioled{
 2.向驱动程序发送数据
 ```
 
-## 安装driver模块
+编译应用程序。
 
-从网络文件系统启动，安装模块测试。
+```
 
-``` 0
-insmod leddriver.ko
+```
+
+
+
+## 测试App
+
+```
 ./platformApp /dev/dtsplatled 0
 ./platformApp /dev/dtsplatled 1
 ```
 
-![image-20220816230943204](image/image-20220816230943204.png)
+![](image/image-20220816230943204.png)
 
 可以正常打开和关闭led。
